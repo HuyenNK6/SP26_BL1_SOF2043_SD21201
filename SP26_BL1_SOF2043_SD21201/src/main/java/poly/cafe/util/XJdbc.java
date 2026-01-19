@@ -24,8 +24,8 @@ public class XJdbc {
     public static Connection openConnection() {
         var driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
         var dburl = "jdbc:sqlserver://localhost;database=PolyCafe;encrypt=true;trustServerCertificate=true;";
-        var username = "sa";
-        var password = "123";
+        var username = "sa";//của SV thay vào đây
+        var password = "123";//của SV thay vào đây
         try {
             if (!XJdbc.isReady()) {
                 Class.forName(driver);
@@ -136,8 +136,8 @@ public class XJdbc {
 
     public static void main(String[] args) {
         demo1();
-        demo2();
-        demo3();
+//        demo2();
+//        demo3();
     }
 
     private static void demo1() {
